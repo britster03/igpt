@@ -39,7 +39,7 @@ const ProfileMenu = () => {
       <DropdownMenuContent className="w-full mb-2" side="top" align="start">
         <DropdownMenuLabel>
           Created by{" "}
-          <Link href="https://www.twitter.com/makrdev">@britster03</Link>
+          <Link href="https://www.linkedin.com/in/ronitvirwani/">@britster03</Link>
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
