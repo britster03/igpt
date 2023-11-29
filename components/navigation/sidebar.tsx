@@ -14,7 +14,7 @@ const Sidebar = () => {
 
   return (
     <aside
-      className={`fixed top-0 left-0 bottom-0 z-40 w-64 px-4 py-8 transition-transform -translate-x-full shadow-md md:translate-x-0 dark:border-neutral-800 border-neutral-200 bg-white dark:bg-neutral-950 dark:text-neutral-50 ${
+      className={`fixed top-0 left-0 bottom-0 z-40 w-80 px-4 py-8 transition-transform -translate-x-full shadow-md md:translate-x-0 dark:border-neutral-800 border-neutral-200 bg-white dark:bg-neutral-950 dark:text-neutral-50 ${
         isMobileMenuOpen ? " !translate-x-0" : " "
       }`}
     >

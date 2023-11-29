@@ -69,20 +69,18 @@ const OpenAIKeyProvider = ({
             </div>
             <h2 className="mt-2 text-lg">Set Your OpenAI API Key</h2>
             <p className="mt-1 text-xs dark:text-neutral-500 text-neutral-500">
-              We do{" "}
+              iGPT does{" "}
               <span className="font-medium dark:text-neutral-300 text-neutral-800">
-                not store your OpenAI API keys on our servers
+                not store your OpenAI API keys
               </span>
               . Instead,{" "}
               <span className="font-medium dark:text-neutral-300 text-neutral-800">
-                we store them in your local storage,
+                the keys are stored in your local storage,
               </span>
               which means that{" "}
               <span className="font-medium dark:text-neutral-300 text-neutral-800">
                 only you have access to your API keys.
               </span>{" "}
-              You can be confident that your key is safe and secure as long as
-              you do not share your device with others.
             </p>
             {/* Form Container */}
             <form className="mt-6" onSubmit={saveHandler}>

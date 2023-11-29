@@ -15,6 +15,7 @@ interface ContextI {
   mutate: any;
   signOut: () => Promise<void>;
   signInWithGithub: () => Promise<void>;
+  signInWithGoogle: () => Promise<void>;
 }
 const Context = createContext<ContextI>({
   user: null,
@@ -23,6 +24,7 @@ const Context = createContext<ContextI>({
   mutate: null,
   signOut: async () => {},
   signInWithGithub: async () => {},
+  signInWithGoogle: async () => {},
 });
 
 export default function SupabaseAuthProvider({
@@ -88,6 +90,20 @@ export default function SupabaseAuthProvider({
     });
   };
 
+  // Sign-In with Github
+  const signInWithGoogle = async () => {
+    await supabase.auth.signInWithOAuth({
+      provider: "google",
+      options: {
+        redirectTo:
+          process.env.NEXT_PUBLIC_VERCEL_ENV === "production" ||
+          process.env.NEXT_PUBLIC_VERCEL_ENV === "preview"
+            ? process.env.NEXT_PUBLIC_AUTH_REDIRECT_URL
+            : "http://localhost:3000/chat",
+      },
+    });
+  };
+
   // Set Owner ID
   useEffect(() => {
     if (user) {
@@ -117,6 +133,7 @@ export default function SupabaseAuthProvider({
     mutate,
     signOut,
     signInWithGithub,
+    signInWithGoogle,
   };
 
   return <Context.Provider value={exposed}>{children}</Context.Provider>;

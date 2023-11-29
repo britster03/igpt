@@ -19,7 +19,7 @@ const Chatbox = ({
   useChat({ currentChat, initialMessages });
 
   return (
-    <main className="relative flex flex-col items-stretch flex-1 w-full h-full ml-0 overflow-hidden transition-all transition-width md:ml-64 dark:bg-neutral-900 bg-neutral-50">
+    <main className="relative flex flex-col items-stretch flex-1 w-full h-full ml-0 overflow-hidden transition-all transition-width md:ml-64 dark:bg-neutral-901 bg-neutral-50">
       <div className="flex-1 overflow-hidden">
         <MobileMenuButton />
         {hasChatMessages ? <Messages /> : <NewChatCurrent />}

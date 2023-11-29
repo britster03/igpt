@@ -17,15 +17,15 @@ const Logo = ({ className }: { className?: string }) => {
         className={className + " hidden dark:block"}
         width={296}
         height={77}
-        src="/makr-logo-light.svg"
-        alt="makr-logo"
+        src="/logo.png"
+        alt="igpt"
       />
       <Image
-        className={className + " dark:hidden"}
+        className={"max-w-[225px]"}
         width={296}
         height={77}
-        src="/makr-logo-dark.svg"
-        alt="makr-logo"
+        src="/logo.png"
+        alt="igpt"
       />
     </>
   );

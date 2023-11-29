@@ -2,12 +2,13 @@
 
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/lib/supabase/supabase-auth-provider";
-import { Github } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { Github, Laptop } from "lucide-react";
 import { useEffect } from "react";
 
 const LoginForm = () => {
   const { signInWithGithub, user } = useAuth();
+  const { signInWithGoogle} = useAuth();
   const router = useRouter();
 
   // Check if there is a user
@@ -28,9 +29,9 @@ const LoginForm = () => {
           <p className="mt-2 text-neutral-600 dark:text-neutral-400">
             Welcome to the{" "}
             <span className="font-semibold text-neutral-800 dark:text-neutral-200">
-              makr.AI
+              iGPT
             </span>{" "}
-            Please login with your Github account.
+            Please login with your Google account.
           </p>
         </div>
         {/* Github Button */}
@@ -38,7 +39,13 @@ const LoginForm = () => {
           onClick={signInWithGithub}
           className="flex items-center w-full gap-2 mt-6"
         >
-          Login with Github <Github size="16" />
+          Login with your Github <Github size="16"/>
+        </Button>
+        <Button
+          onClick={signInWithGoogle}
+          className="flex items-center w-full gap-2 mt-6"
+        >
+          Login with Google <Laptop size="16"/>
         </Button>
       </div>
     </div>

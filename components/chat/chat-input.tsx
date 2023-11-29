@@ -93,7 +93,7 @@ const ChatInput = () => {
         >
           <Textarea
             className="h-auto peer"
-            placeholder="Type your message..."
+            placeholder="Message iGPT..."
             value={inputValue}
             onChange={(e) => {
               setInputValue(e.target.value);

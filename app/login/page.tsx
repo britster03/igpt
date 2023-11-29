@@ -8,16 +8,14 @@ const LoginPage = () => {
       <LoginForm />
       {/* Gradient */}
       <div className="relative hidden w-full overflow-hidden md:col-span-2 rounded-l-2xl md:block">
-        {/* Overlay */}
-        <div className="absolute inset-0 z-10 bg-white/10 backdrop-blur-lg" />
         {/* Content */}
         <div className="absolute inset-0 z-20 flex items-center justify-center px-8">
           <div>
             <Image
-              className="max-w-[200px]"
+              className="max-w-[225px]"
               width={296}
               height={77}
-              src="/makr-logo-dark.svg"
+              src="/logo.png"
               alt="makr-logo"
             />
             <div className="mt-4">
@@ -25,12 +23,8 @@ const LoginPage = () => {
                 A ChatGPT clone with enhanced features for makers.
               </div>
               <div className="max-w-xl text-sm text-neutral-700">
-                ChatGPT is a product of OpenAI and makr.AI is{" "}
-                <span className="font-medium text-neutral-800">
-                  100% unaffiliated with OpenAI.
-                </span>{" "}
-                In order to use this procut, you must get your OpenAI API key
-                from their{" "}
+                In order to use this product, you must get your OpenAI API key
+                from their official {" "} 
                 <Link
                   className="underline underline-offset-4"
                   href="https://platform.openai.com"
@@ -48,7 +42,7 @@ const LoginPage = () => {
           className="z-0"
           alt="gradient"
           fill
-          src="/login-gradient.jpg"
+          src="/gradient.png"
         />
       </div>
     </div>

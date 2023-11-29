@@ -127,9 +127,9 @@ const ChatSettingsMenu = () => {
               <div className="flex items-center gap-2 mt-3 dark:text-neutral-400">
                 <Info size="14" />
                 <div className="text-xs font-light ">
-                  GPT-4 is almost{" "}
+                  GPT-4 is {" "}
                   <span className="dark:text-neutral-300">10x expensive</span>{" "}
-                  than the previous model.
+                  than GPT-3.5 Turbo. 
                 </div>
               </div>
             )}

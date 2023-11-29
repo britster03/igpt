@@ -22,7 +22,7 @@ const MobileMenuButton = () => {
       </Button>
       {/* Current Chat Name */}
       <div className="w-full mr-10 text-center bg-transparent">
-        <h1 className="text-sm font-medium dark:text-neutral-600">
+        <h1 className="text-sm font-medium dark:text-neutral-601">
           {currentChat?.title}
         </h1>
       </div>

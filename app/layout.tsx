@@ -2,7 +2,7 @@ import "server-only";
 import ".//globals.css";
 
 export const metadata = {
-  title: "makr.AI",
+  title: "iGPT",
   description: "A ChatGPT clone with enhanced features for makers.",
 };
 

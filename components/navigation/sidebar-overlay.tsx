@@ -8,7 +8,7 @@ const SiderbarOverlay = () => {
   return (
     <div
       onClick={() => setIsMobileMenuOpen(false)}
-      className={`fixed inset-0 z-30 md:hidden transition-transform dark:bg-neutral-950/60 bg-white/60 duration-75 ${
+      className={`fixed inset-0 z-30 md:hidden transition-transform dark:bg-neutral-950/60 bg-white/60 duration-76 ${
         isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
       }`}
     />

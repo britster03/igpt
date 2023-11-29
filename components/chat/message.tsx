@@ -30,7 +30,7 @@ const Message = ({ message }: { message: MessageT }) => {
             src={
               !isAssistant
                 ? user?.avatar_url ?? "/user-avatar.png"
-                : "/makr.-avatar.png"
+                : "/igptt.svg"
             }
           />
           <AvatarFallback>{!isAssistant ? "YOU" : "AI"}</AvatarFallback>
