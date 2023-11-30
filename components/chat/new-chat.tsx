@@ -33,8 +33,8 @@ const NewChat = () => {
       {/* Container */}
       <div className="w-full max-h-full px-8 py-11 mx-8 rounded-md shadow-sm md:max-w-xl dark:bg-neutral-950/30 bg-white/50">
         <h2 className="text-lg font-medium">Start a New Chat</h2>
-        <p className="mt-1 font-light dark:text-neutral-500">
-          Please select your model and system propmt first. Then, you can{" "}
+        <p className="mt-1 font-light dark:text-neutral-501">
+          Please select the GPT model. Then, you can{" "}
           <span className="font-medium dark:text-neutral-400">
             ask your first question
           </span>{" "}
@@ -84,7 +84,7 @@ const NewChat = () => {
             </Select>
           </div>
           <div className="mt-6">
-            <Label>System Propmt</Label>
+            <Label>System Prompt</Label>
             <TextareaDefault
               value={systemPropmt}
               onChange={(e) => {

@@ -42,39 +42,6 @@ const ProfileMenu = () => {
           <Link href="https://www.linkedin.com/in/ronitvirwani/">@britster03</Link>
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuItem>
-          <div className="flex items-center gap-1">
-            Prompts Library{" "}
-            <span className="px-2 py-1 text-xs rounded-md bg-neutral-100 dark:bg-neutral-600 dark:text-neutral-200">
-              Soon
-            </span>
-          </div>
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-          <div className="flex items-center gap-1">
-            Collections{" "}
-            <span className="px-2 py-1 text-xs rounded-md bg-neutral-100 dark:bg-neutral-600 dark:text-neutral-200">
-              Soon
-            </span>
-          </div>
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-          <div className="flex items-center gap-1">
-            Plugins{" "}
-            <span className="px-2 py-1 text-xs rounded-md bg-neutral-100 dark:bg-neutral-600 dark:text-neutral-200">
-              Soon
-            </span>
-          </div>
-        </DropdownMenuItem>
-        <DropdownMenuSeparator />
-        <DropdownMenuItem
-          onClick={() => {
-            setTheme(theme === "dark" ? "light" : "dark");
-          }}
-        >
-          Change Theme
-        </DropdownMenuItem>
-        <DropdownMenuSeparator />
         <DropdownMenuItem
           onClick={() => {
             apiKeyHandler({

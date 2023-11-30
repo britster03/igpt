@@ -161,12 +161,12 @@ const ChatSettingsMenu = () => {
             </div>
             <div className="mt-6">
               <div className="flex items-center justify-between w-full">
-                <Label>System Propmt</Label>
+                <Label>System Prompt</Label>
                 <button
                   onClick={resetSystemInput}
                   className="text-xs text-neutral-600"
                 >
-                  Reset to Default
+                  
                 </button>
               </div>
               <TextareaDefault

@@ -16,7 +16,7 @@ const LoginPage = () => {
               width={296}
               height={77}
               src="/logo.png"
-              alt="makr-logo"
+              alt="logo"
             />
             <div className="mt-4">
               <div className="text-2xl font-medium text-neutral-900">

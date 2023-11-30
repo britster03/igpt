@@ -58,9 +58,7 @@ const ChatInput = () => {
 
   return (
     <div className="sticky bottom-0 left-0 right-0 px-4 py-10 sm:px-8 bg-gradient-to-b from-transparent dark:via-neutral-950/60 dark:to-neutral-950/90 via-neutral-50/60 to-neutral-50/90">
-      {/* Container */}
       <div className="w-full max-w-5xl mx-auto">
-        {/* Abort Controller */}
         {isHandling && (
           <div className="flex items-center justify-center w-full max-w-5xl py-4">
             <Button
@@ -72,7 +70,6 @@ const ChatInput = () => {
             </Button>
           </div>
         )}
-        {/* Regenerate Controller - Desktop */}
         {!isHandling && isRegenerateSeen && (
           <div className="items-center justify-center hidden py-2 sm:flex">
             <Button
@@ -84,9 +81,7 @@ const ChatInput = () => {
             </Button>
           </div>
         )}
-        {/* Settings */}
         {hasChatMessages && <ChatSettingsMenu />}
-        {/* Input Container */}
         <form
           onSubmit={handleSubmit}
           className="flex items-center w-full py-2 bg-white rounded-md shadow-sm focus-within:ring-neutral-300 dark:focus-within:ring-neutral-500 focus-within:ring-1 dark:bg-neutral-900"
@@ -105,7 +100,6 @@ const ChatInput = () => {
               className="mr-4 text-neutral-600 dark:peer-focus:text-neutral-500 peer-focus:text-neutral-300"
             />
           </button>
-          {/* Regenerate Controller - Desktop */}
           {!isHandling && isRegenerateSeen && (
             <RefreshCw
               onClick={regenerateHandler}

@@ -19,7 +19,6 @@ const Sidebar = () => {
       }`}
     >
       <div className="flex flex-col flex-1 h-full max-w-full">
-        {/* Header */}
         <div>
           <Logo className="max-w-[70px]" />
           {/* New Chat Button */}
@@ -35,7 +34,6 @@ const Sidebar = () => {
           </Button>
         </div>
         <Chats />
-        {/* Footer */}
         <div className="flex-1 mt-10">
           <ProfileMenu />
         </div>

@@ -90,7 +90,7 @@ export default function SupabaseAuthProvider({
     });
   };
 
-  // Sign-In with Github
+  // Sign-In with Google
   const signInWithGoogle = async () => {
     await supabase.auth.signInWithOAuth({
       provider: "google",

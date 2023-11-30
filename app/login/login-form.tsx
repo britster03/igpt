@@ -16,7 +16,6 @@ const LoginForm = () => {
     if (user) {
       router.push("/");
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
   return (
@@ -41,6 +40,7 @@ const LoginForm = () => {
         >
           Login with your Github <Github size="16"/>
         </Button>
+        {/* Google Button */}
         <Button
           onClick={signInWithGoogle}
           className="flex items-center w-full gap-2 mt-6"
