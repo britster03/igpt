@@ -16,6 +16,8 @@ interface ContextI {
   signOut: () => Promise<void>;
   signInWithGithub: () => Promise<void>;
   signInWithGoogle: () => Promise<void>;
+  signInWithEmail: (email: string, password: string) => Promise<string | null>;
+  signUpWithEmail: (email: string, password: string) => Promise<string | null>;
 }
 const Context = createContext<ContextI>({
   user: null,
@@ -25,6 +27,8 @@ const Context = createContext<ContextI>({
   signOut: async () => {},
   signInWithGithub: async () => {},
   signInWithGoogle: async () => {},
+  signInWithEmail: async (email: string, password: string) => null,
+  signUpWithEmail: async (email: string, password: string) => null,
 });
 
 export default function SupabaseAuthProvider({
@@ -90,7 +94,34 @@ export default function SupabaseAuthProvider({
     });
   };
 
-  // Sign-In with Google
+  const signInWithEmail = async (email: string, password: string) => {
+    const { error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    });
+
+    if (error) {
+      return error.message;
+    }
+
+    return null;
+  };
+
+  const signUpWithEmail = async (email: string, password: string) => {
+    const { error } = await supabase.auth.signUp({
+      email,
+      password,
+    });
+
+    if (error) {
+      return error.message;
+    }
+
+    return null;
+  };
+
+
+  // Sign-In with Github
   const signInWithGoogle = async () => {
     await supabase.auth.signInWithOAuth({
       provider: "google",
@@ -134,6 +165,8 @@ export default function SupabaseAuthProvider({
     signOut,
     signInWithGithub,
     signInWithGoogle,
+    signInWithEmail,
+    signUpWithEmail,
   };
 
   return <Context.Provider value={exposed}>{children}</Context.Provider>;
