@@ -33,14 +33,14 @@ const ProfileMenu = () => {
         </Avatar>
         <div className="text-left whitespace-nowrap">
           <div>{user?.full_name}</div>
-          <div className="text-xs dark:text-neutral-400">@britster03</div>
+          <div className="text-xs dark:text-neutral-400">@gplc</div>
         </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-full mb-2" side="top" align="start">
-        <DropdownMenuLabel>
+        {/* <DropdownMenuLabel>
           Created by{" "}
           <Link href="https://www.linkedin.com/in/ronitvirwani/">@britster03</Link>
-        </DropdownMenuLabel>
+        </DropdownMenuLabel> */}
         <DropdownMenuSeparator />
         <DropdownMenuItem
           onClick={() => {

@@ -45,23 +45,24 @@ const LoginForm = () => {
     <div className="flex items-center w-full h-full px-8">
       <div className="w-full">
         <div>
-          <h1 className="text-4xl font-bold">Login</h1>
+          <h1 className="text-4xl font-bold text-blue-500">Login</h1>
           <p className="mt-2 text-neutral-600 dark:text-neutral-400">
             Welcome to the{" "}
             <span className="font-semibold text-neutral-800 dark:text-neutral-200">
-              iGPT
+              GPLC.
             </span>{" "}
-            Please login with your Google account.
+            Please Sign-in to continue.
           </p>
         </div>
-        <Button
+        {/* <Button
           onClick={signInWithGithub}
           className="flex items-center w-half gap-2 mt-6"
         >
           Login with your Github <Github size="16" />
-        </Button>
+        </Button> */}
         <Button
           onClick={signInWithGoogle}
+          variant="subtle"
           className="flex items-center w-half gap-2 mt-6"
         >
           Login with Google <Laptop size="16" />

@@ -11,27 +11,13 @@ const LoginPage = () => {
         {/* Content */}
         <div className="absolute inset-0 z-20 flex items-center justify-center px-8">
           <div>
-            <Image
-              className="max-w-[225px]"
-              width={296}
-              height={77}
-              src="/logo.png"
-              alt="logo"
-            />
+          <h1 className="text-4xl font-bold-200 text-blue-500">💬 GPLC</h1>
             <div className="mt-4">
               <div className="text-2xl font-medium text-neutral-900">
-                A ChatGPT clone with enhanced features for makers.
+              Enhance your legal practice with AI augmented intelligence
               </div>
               <div className="max-w-xl text-sm text-neutral-700">
-                In order to use this product, you must get your OpenAI API key
-                from their official {" "} 
-                <Link
-                  className="underline underline-offset-4"
-                  href="https://platform.openai.com"
-                >
-                  website
-                </Link>
-                .
+              Disclaimer: AI is an area of active research with known problems such as biased generation and misinformation. Do not use this application for high-stakes decisions or advice.
               </div>
             </div>
           </div>

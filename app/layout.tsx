@@ -2,8 +2,8 @@ import "server-only";
 import ".//globals.css";
 
 export const metadata = {
-  title: "iGPT",
-  description: "A ChatGPT clone with enhanced features for makers.",
+  title: "GPLC",
+  description: "EnhancING legal practice with AI augmented intelligence",
 };
 
 import JotaiProvider from "@/components/providers/jotai-provider";

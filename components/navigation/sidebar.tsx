@@ -20,7 +20,7 @@ const Sidebar = () => {
     >
       <div className="flex flex-col flex-1 h-full max-w-full">
         <div>
-          <Logo className="max-w-[70px]" />
+          <h1 className="text-4xl font-bold-200 text-center text-blue-500">💬 GPLC</h1>
           {/* New Chat Button */}
           <Button
             onClick={() => {

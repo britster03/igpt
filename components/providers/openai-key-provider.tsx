@@ -69,7 +69,7 @@ const OpenAIKeyProvider = ({
             </div>
             <h2 className="mt-2 text-lg">Set Your OpenAI API Key</h2>
             <p className="mt-1 text-xs dark:text-neutral-500 text-neutral-500">
-              iGPT does{" "}
+              GPLC does{" "}
               <span className="font-medium dark:text-neutral-300 text-neutral-800">
                 not store your OpenAI API keys
               </span>
